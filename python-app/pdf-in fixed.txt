@@ -1895,6 +1895,8 @@ B. Amazon Machine Image (AMI)
 C. AWS Launch Wizard
 D. AWS Elastic Beanstalk
 Answer: A
+Explanation:
+EC2 Image Builder is a service designed to make it easier and faster to build and maintain secure and compliant EC2 machine images, also known as Amazon Machine Images (AMIs). This service automates the creation, testing, and distribution of AMIs, ensuring that the images are up-to-date with the latest OS updates, patches, and configurations required for compliance or security.
 QUESTION 175
 A company wants an automated process to continuously scan its Amazon EC2 instances for
 software vulnerabilities.
@@ -2085,7 +2087,9 @@ A. Benefits management
 B. Risk management
 C. Application portfolio management
 D. Cloud financial management
-Answer: C
+Answer: A
+Explanation:
+Benefits management within the AWS CAF governance perspective is specifically tailored to help organizations identify, manage, and realize the benefits of cloud adoption. This capability focuses on aligning the cloud strategy with business objectives and tracking the realization of those benefits over time. By utilizing benefits management, the company can systematically measure and manage the outcomes related to its cloud investments, ensuring that the desired business goals are achieved as a result of the cloud transformation.
 QUESTION 192
 A company needs to quickly and securely move files over long distances between its client and
 an Amazon S3 bucket.
@@ -2179,6 +2183,8 @@ B. Amazon Elastic File System (Amazon EFS)
 C. Amazon Elastic Block Store (Amazon EBS)
 D. Amazon S3
 Answer: D
+Explanation:
+Amazon S3 (Simple Storage Service) is designed for durability, scalability, and cost-effectiveness. It is an object storage service that can handle large volumes of unstructured data such as logs, making it ideal for storing server logs. S3 provides various storage classes tailored for different use cases, including infrequently accessed data or data that requires frequent access. This flexibility allows you to optimize costs based on how often the logs are accessed.
 QUESTION 203
 Which of the following is a recommended design principle for AWS Cloud architecture?
 A. Design tightly coupled components.
@@ -2244,6 +2250,9 @@ B. Create a template of the DB instance by using AWS CloudFormation.
 C. Take frequent snapshots of the DB instance. Store the snapshots in Amazon S3.
 D. Modify the DB instance to be a Multi-AZ deployment.
 Answer: D
+Explanation:
+Multi-AZ deployment for Amazon RDS involves the DB instance being replicated synchronously to a standby instance in a different Availability Zone (AZ). In the event of a planned or unplanned outage of the primary DB instance (including database software patching, hardware failure, and network issues), RDS automatically fails over to the standby so that database operations can resume quickly without administrative intervention. This automatic failover mechanism typically achieves a recovery time well under 5 minutes, ensuring high availability.
+Not C :regular snapshots are important for backup purposes and can help in disaster recovery scenarios, but they do not support immediate failover. Recovery from snapshots can be time-consuming depending on the size of the database and thus does not support a recovery time of less than 5 minutes.
 QUESTION 211
 A company plans to migrate its application to AWS and run the application on Amazon EC2
 instances. The application will have continuous usage for 1 year.
@@ -2322,6 +2331,8 @@ B. Amazon Cognito
 C. AWS IAM Identity Center (AWS Single Sign-On)
 D. AWS CLI
 Answer: C
+Explanation:
+AWS IAM Identity Center (AWS Single Sign-On) is designed specifically to address the need for single sign-on (SSO) capabilities across AWS services and third-party applications. It enables users to access multiple services and applications through a single user login using SAML 2.0, simplifying the authentication process and improving security management. AWS IAM Identity Center supports integration with various SAML 2.0 compatible applications, making it the ideal choice for this requirement.
 QUESTION 220
 Which AWS service should users use to learn about AWS service availability and operations?
 A. Amazon EventBridge
@@ -2329,6 +2340,8 @@ B. AWS Service Catalog
 C. AWS Control Tower
 D. AWS Health Dashboard
 Answer: D
+Explanation:
+The AWS Health Dashboard is a centralized location where users can find information about the availability and operation of AWS services. It provides an overview of the current status of AWS services, including planned and unplanned events. Users can also search for specific services to get more detailed information.
 QUESTION 221
 Which AWS service or tool can be used to capture information about inbound and outbound
 traffic in an Amazon VPC?
@@ -2370,6 +2383,8 @@ B. AWS Application Migration Service
 C. AWS Application Discovery Service
 D. AWS Database Migration Service (AWS DMS)
 Answer: C
+Explanation:
+AWS Application Discovery Service helps enterprises plan migration projects by gathering information about on-premises data centers. It collects and presents configuration, usage, and behavior data from servers to help you better understand your workloads. This includes details such as hostnames, IP addresses, and MAC addresses.
 QUESTION 226
 Which action will help increase security in the AWS Cloud?
 A. Enable programmatic access for all IAM users.
@@ -2392,8 +2407,7 @@ A. Amazon S3 is a high-performance block storage service that is designed for us
 EC2.
 B. Amazon S3 is an object storage service that provides high-level performance, security, scalability,
 and data availability.
-C. Amazon S3 is a fully managed, highly reliable, and scalable file storage system that is accessible
-over the industry-standard SMB protocol.
+C. Amazon S3 is a fully managed, highly reliable, and scalable file storage system that is accessible over the industry-standard SMB protocol.
 D. Amazon S3 is a scalable, fully managed elastic NFS for use with AWS Cloud services and onpremises resources.
 Answer: B
 QUESTION 229
@@ -2476,6 +2490,8 @@ B. Amazon Simple Notification Service (Amazon SNS)
 C. Amazon Kinesis Data Streams
 D. Amazon Simple Queue Service (Amazon SQS)
 Answer: D
+Explanation:
+Amazon SQS is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. It supports both standard and FIFO queues, with FIFO queues ensuring that messages are processed exactly once, in the order that they are sent. This aligns with the requirement of processing messages in first-in, first-out (FIFO) order.
 QUESTION 238
 Which AWS service or feature is a browser-based, pre-authenticated service that can be
 launched directly from the AWS Management Console?
@@ -2484,6 +2500,8 @@ B. AWS Lightsail
 C. AWS Cloud9
 D. AWS CloudShell
 Answer: D
+Explanation:
+It is a browser-based, pre-authenticated service that provides you with a Linux shell interface directly within the AWS Management Console. With AWS CloudShell, you can run various AWS CLI commands, use pre-installed tools, and develop scripts without the need to manage or provision any resources.
 QUESTION 239
 A company wants to migrate its database to a managed AWS service that is compatible with
 PostgreSQL.
@@ -2494,6 +2512,9 @@ C. Amazon EC2
 D. Amazon DynamoDB
 E. Amazon Aurora
 Answer: BE
+Explanation:
+mazon RDS (Relational Database Service): Amazon RDS supports PostgreSQL as one of the database engines. It provides managed database services, handling routine tasks like hardware provisioning, database setup, patching, and backups.
+Amazon Aurora: Amazon Aurora is a MySQL and PostgreSQL-compatible relational database engine provided by AWS. It offers high performance, availability, and durability, making it suitable for migrating PostgreSQL databases.
 QUESTION 240
 A company has a fleet of cargo ships. The cargo ships have sensors that collect data at sea,
 where there is intermittent or no internet connectivity. The company needs to collect, format, and
@@ -2514,6 +2535,8 @@ B. IAM roles
 C. AWS Security Hub
 D. Amazon GuardDuty
 Answer: B
+Explanation:
+IAM roles are used to grant permissions to entities within or outside of AWS. In this scenario, you would create an IAM role and attach it to the EC2 instances hosting the application. The IAM role would have the necessary permissions to interact with Amazon SNS, allowing the application running on the EC2 instances to send messages through Amazon SNS.
 QUESTION 242
 A user has limited knowledge of AWS services, but wants to quickly deploy a scalable Node.js
 application in the AWS Cloud.
@@ -2523,6 +2546,8 @@ B. AWS Elastic Beanstalk
 C. Amazon EC2
 D. AWS OpsWorks
 Answer: B
+Explanation:
+AWS Elastic Beanstalk is a Platform as a Service (PaaS) offering from AWS that simplifies the deployment and management of applications. It automatically handles the deployment, capacity provisioning, load balancing, and auto-scaling of the application, allowing developers to focus on writing code. With Elastic Beanstalk, you can quickly deploy your Node.js application without needing to manage the underlying infrastructure.
 QUESTION 243
 A company needs a content delivery network that provides secure delivery of data, videos,
 applications, and APIs to users globally with low latency and high transfer speeds.
@@ -2532,6 +2557,8 @@ B. Elastic Load Balancing
 C. Amazon S3
 D. Amazon Elastic Transcoder
 Answer: A
+Explanation:
+Amazon CloudFront is a web service that gives businesses and web application developers an easy and cost effective way to distribute content with low latency and high data transfer speeds. Like other AWS services, Amazon CloudFront is a self-service, pay-per-use offering, requiring no long term commitments or minimum fees. With CloudFront, your files are delivered to end-users using a global network of edge locations.
 QUESTION 244
 A company needs to use third-party software for its workload on AWS.
 Which AWS service or feature can the company use to purchase the software?
@@ -2540,6 +2567,8 @@ B. AWS Managed Services
 C. AWS License Manager
 D. AWS Marketplace
 Answer: D
+Explanation:
+AWS Marketplace is an online store that makes it easy for customers to find, buy, and immediately start using software and services that run on AWS. It offers a wide selection of third-party software products, including solutions for various use cases such as security, machine learning, databases, and more. Customers can search for software, compare options, and choose the product that best fits their needs. Once purchased, the software can be deployed directly on AWS infrastructure.
 QUESTION 245
 A company needs fully managed, highly reliable, and scalable file storage that is accessible over
 the Server Message Block (SMB) protocol.
@@ -2549,6 +2578,8 @@ B. Amazon Elastic File System (Amazon EFS)
 C. Amazon FSx for Windows File Server
 D. Amazon Elastic Block Store (Amazon EBS)
 Answer: C
+Explanation:
+Amazon FSx for Windows File Server is a fully managed, highly reliable, and scalable file storage service that is accessible over the Server Message Block (SMB) protocol. It provides fully managed, highly reliable, and scalable file storage that is accessible over the SMB protocol. It is designed to work with the Microsoft Windows operating system and it supports the SMB protocol which allows to access the file storage from Windows servers and clients.
 QUESTION 246
 A company needs to centrally configure and manage Amazon VPC security groups across
 multiple AWS accounts within an organization in AWS Organizations.
@@ -2558,6 +2589,8 @@ B. Amazon GuardDuty
 C. Amazon Detective
 D. AWS WAF
 Answer: A
+Explanation:
+AWS Firewall Manager is a security management service that allows you to centrally configure and manage firewall rules across multiple AWS accounts and resources. It integrates with AWS Organizations, allowing you to apply security policies at scale across your organization. With Firewall Manager, you can create security group policies that define the desired rules for your VPC security groups and apply them consistently across accounts and VPCs. This helps ensure uniform security posture and compliance with organizational security policies.
 QUESTION 247
 Which task is a responsibility of AWS, according to the AWS shared responsibility model?
 A. Configure identity and access management for applications.
@@ -2575,6 +2608,8 @@ B. NAT gateway
 C. Amazon PrivateLink
 D. VPC peering
 Answer: B
+Explanation:
+A NAT gateway allows instances in a private subnet to initiate outbound traffic to the internet while preventing inbound traffic from reaching those instances. It acts as a middleman for internet-bound traffic, providing a source IP address for the instance while masking its private IP. This setup allows the EC2 instance to access the internet for tasks such as pulling operating system updates while maintaining security by not allowing inbound connections from the internet to the instance.
 QUESTION 249
 Which actions are the responsibility of AWS, according to the AWS shared responsibility model?
 (Choose two.)
@@ -2584,6 +2619,8 @@ C. Enforcing a strict password policy for IAM users
 D. Patching the operating system on Amazon RDS instances
 E. Configuring security groups and network ACLs
 Answer: AD
+Explanation:
+AWS is responsible for securing the underlying infrastructure, including the virtualization layer and the hardware. This means they ensure the security of the physical servers, networking, and virtualization infrastructure that supports the cloud deployment.
 QUESTION 250
 A company is storing data that will not be frequently accessed in the AWS Cloud. If the company
 needs to access the data, the data needs to be retrieved within 12 hours. The company wants a
@@ -2594,6 +2631,10 @@ B. S3 Glacier Flexible Retrieval
 C. S3 One Zone-Infrequent Access (S3 One Zone-IA)
 D. S3 Standard-Infrequent Access (S3 Standard-IA)
 Answer: B
+Explanation:
+S3 Glacier Flexible Retrieval (formerly known as S3 Glacier) is specifically designed for data that is infrequently accessed and where retrieval times of several hours are acceptable. It offers low storage costs per gigabyte and supports retrieval times that can be configured from a few minutes to several hours. The 12-hour retrieval time requirement fits well within this storage class's capabilities.
+Wrong:S3 One Zone-Infrequent Access (S3 One Zone-IA) offers lower storage costs for infrequently accessed data but stores the data in only one Availability Zone, which could be riskier in terms of data durability if that zone is affected by an outage or failure. Also, it provides immediate access, which might be more than needed in this scenario.
+
 QUESTION 251
 Which AWS service or resource can be used to identify services that have been used by a user
 within a specified date range?
@@ -2602,6 +2643,8 @@ B. AWS Certificate Manager (ACM)
 C. Network Access Analyzer
 D. AWS Identity and Access Management Access Analyzer
 Answer: D
+Explanation:
+AWS Identity and Access Management (IAM) Access Analyzer: This tool helps identify resources that are shared with external entities by analyzing policies. It can be used to check for unintended permissions and access patterns, and although primarily designed for auditing permissions, it can be part of a broader strategy to analyze and audit who accessed what services within AWS based on policy analysis and access patterns.
 QUESTION 252
 A company needs to engage third-party consultants to help maintain and support its AWS
 environment and the company's business needs.
@@ -2611,6 +2654,8 @@ B. AWS Organizations
 C. AWS Service Catalog
 D. AWS Partner Network (APN)
 Answer: D
+Explanation:
+AWS Partner Network (APN): This is the global partner program for technology and consulting businesses who leverage Amazon Web Services to build solutions and services for customers. The APN includes a diverse set of partners such as Managed Service Providers (MSPs), Independent Software Vendors (ISVs), and System Integrators (SIs), all of whom can be engaged to provide additional support, maintenance, and professional services to help manage a company's AWS environment.
 QUESTION 253
 A company wants to create Amazon QuickSight dashboards every week by using its billing data.
 Which AWS feature or tool can the company use to meet these requirements?
@@ -2618,6 +2663,8 @@ A. AWS Budgets
 B. AWS Cost Explorer
 C. AWS Cost and Usage Report
 D. AWS Cost Anomaly Detection
+Explanation:
+AWS Cost and Usage Report delivers detailed data about AWS costs and usage, which can be directly used to feed Amazon QuickSight for creating detailed and customized billing dashboards. It is specifically designed to provide comprehensive data suitable for in-depth analysis and reporting.
 Answer: C
 QUESTION 254
 A company is planning to move data backups to the AWS Cloud. The company needs to replace
@@ -2628,6 +2675,8 @@ B. AWS Snowcone
 C. AWS Backup
 D. Amazon Elastic File System (Amazon EFS)
 Answer: A
+Explanation:
+AWS Storage Gateway: This service seamlessly integrates on-premises environments with cloud storage for backup and storage solutions. It provides a hybrid storage solution that allows data to be cached locally on your on-premises hardware, while synchronously backing up data to AWS cloud storage. This meets both the cloud storage and local caching requirements.
 QUESTION 255
 A company needs to organize its resources and track AWS costs on a detailed level. The
 company needs to categorize costs by business department, environment, and application.
@@ -2640,6 +2689,8 @@ C. Create Amazon CloudWatch dashboards to visually organize and track costs indi
 D. Access the AWS Billing and Cost Management dashboard to organize and track resource
 consumption on a detailed level.
 Answer: B
+Explanation:
+Tagging allows you to apply custom metadata tags to AWS resources. These tags can include identifiers such as department, environment, or application, enabling detailed organization according to the company's internal structures.
 QUESTION 256
 A company needs to plan, schedule, and run hundreds of thousands of computing jobs on AWS.
 Which AWS service can the company use to meet this requirement?
@@ -2648,6 +2699,8 @@ B. AWS Service Catalog
 C. Amazon Simple Queue Service (Amazon SQS)
 D. AWS Batch
 Answer: D
+Explanation:
+AWS Batch: This service is specifically designed to enable developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS. AWS Batch dynamically provisions the optimal quantity and type of compute resources (like CPU or memory-optimized instances) based on the volume and specific requirements of the batch jobs submitted. This makes it ideal for large-scale processing tasks where managing the infrastructure scaling and job scheduling is handled by AWS, simplifying the setup.
 QUESTION 257
 Which AWS services or features provide high availability and low latency by enabling failover
 across different AWS Regions? (Choose two.)
@@ -2656,7 +2709,10 @@ B. Network Load Balancer
 C. Amazon S3 Transfer Acceleration
 D. AWS Global Accelerator
 E. Application Load Balancer
-Answer: AD
+Answer: AD 
+Explanation:
+Route 53 effectively routes end user requests to infrastructure running in AWS, such as Amazon EC2 instances, Elastic Load Balancing load balancers, or Amazon S3 buckets, and can do so across different AWS Regions. It supports health checking and DNS failover capabilities, which help ensure high availability by rerouting traffic to healthy endpoints, potentially across multiple regions.
+AWS Global Accelerator: This service improves the availability and performance of your applications with global traffic distribution. It directs traffic to optimal endpoints over the AWS global network, enhances internet performance by up to 60%, and provides failover across AWS Regions, reducing latency and improving fault tolerance for your applications.
 QUESTION 258
 Which of the following is a way to use Amazon EC2 Auto Scaling groups to scale capacity in the
 AWS Cloud?
@@ -2665,6 +2721,8 @@ B. Use serverless EC2 instances.
 C. Scale the size of EC2 instances up or down automatically, based on demand.
 D. Transfer unused CPU resources between EC2 instances.
 Answer: A
+Explanation:
+This option refers to the ability of EC2 Auto Scaling to automatically adjust the number of instances in a group, adding instances (scaling out) when demand is high and removing instances (scaling in) when demand drops. This ensures that the number of instances matches the load without manual intervention, improving cost efficiency and performance.
 QUESTION 259
 Which abilities are benefits of the AWS Cloud? (Choose two.)
 A. Trade variable expenses for capital expenses.
@@ -2673,6 +2731,9 @@ C. Plan capacity in advance of deployments.
 D. Take advantage of economies of scale.
 E. Reduce dependencies on network connectivity.
 Answer: BD
+Explanation:
+Deploy globally in minutes. - AWS allows you to quickly set up and deploy your applications in multiple regions around the world, enabling faster access and a better experience for end users by minimizing latency.
+Take advantage of economies of scale. - AWS's massive scale allows it to offer lower pay-as-you-go prices. The larger the scale of AWS operations, the cheaper the costs for its customers, as they benefit from the bulk pricing advantages.
 QUESTION 260
 Which AWS security service protects applications from distributed denial of service attacks with
 always-on detection and automatic inline mitigations?
@@ -2681,6 +2742,8 @@ B. AWS Web Application Firewall (AWS WAF)
 C. Elastic Load Balancing (ELB)
 D. AWS Shield
 Answer: D
+Explanation:
+AWS Shield is specifically designed to safeguard applications from DDoS attacks. It provides always-on detection and automatic response mechanisms to mitigate such attacks, ensuring that applications remain available and performant. AWS Shield comes in two tiers: Standard and Advanced, with the Advanced tier offering additional protection features and support options for more complex and larger scale DDoS threats.
 QUESTION 261
 Which AWS service allows users to model and provision AWS resources using common
 programming languages?
@@ -2689,6 +2752,8 @@ B. AWS CodePipeline
 C. AWS Cloud Development Kit (AWS CDK)
 D. AWS Systems Manager
 Answer: C
+Explanation:
+The AWS CDK lets developers define their cloud resources using familiar programming languages such as JavaScript, TypeScript, Python, Java, and C#. This approach provides developers with the power to use the full capabilities of programming languages to define reusable cloud components and provision them through AWS CloudFormation.
 QUESTION 262
 Which Amazon EC2 instance pricing model can provide discounts of up to 90%?
 A. Reserved Instances
