@@ -11,7 +11,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": " ",
+        "description": "",
         "source_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoptionframework/people-perspective.html"
     },
     {
@@ -73,7 +73,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "Amazon CloudFront is a web service that gives businesses and web application developers an easy and cost effective way to distribute content with low latency and high data transfer speeds. Like other AWS services, Amazon CloudFront is a self-service, pay-per-use offering, requiring no long term commitments or minimum fees. With CloudFront, your files are delivered to end-users using a global network of edge locations.",
         "source_url": ""
     },
     {
@@ -316,9 +316,9 @@
             "4": "AWS Health Dashboard"
         },
         "correct_answers": [
-            "options.2"
+            "options.1"
         ],
-        "description": "",
+        "description": "AWS Trusted Advisor provides insights and recommendations for AWS resources, including security groups. It specifically includes checks for security groups that are configured to allow unrestricted access (i.e., access from any IP address) to sensitive ports, which can pose a security risk. This makes it an excellent tool for monitoring and identifying potential security issues such as misconfigured security groups.",
         "source_url": ""
     },
     {
@@ -771,12 +771,13 @@
             "1": "Security group",
             "2": "AWS WAF",
             "3": "AWS Firewall Manager",
-            "4": "Network ACL"
+            "4": "Network ACL",
+            "5": "They provide a layer of security at the subnet level, allowing you to specify both inbound and outbound \ntraffic rules that control traffic based on IP protocol, IP address range, and port number."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
-        "description": "",
+        "description": "Network ACLs act as a firewall for controlling traffic into and out of one or more subnets within an Amazon VPC. They provide a layer of security at the subnet level, allowing you to specify both inbound and outbound traffic rules that control traffic based on IP protocol, IP address range, and port number.",
         "source_url": ""
     },
     {
@@ -836,7 +837,7 @@
             "4": "Application of Amazon EC2 operating system patches"
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -1048,7 +1049,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "Operations: This perspective specifically addresses the ongoing management and monitoring of cloud resources. It encompasses how to run and use cloud environments efficiently. This includes capabilities such as configuration management and patch management, which are crucial for maintaining the operational health, performance, and security of cloud resources.",
         "source_url": ""
     },
     {
@@ -1063,7 +1064,7 @@
         },
         "correct_answers": [
             "options.2",
-            "options.5"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -1078,7 +1079,7 @@
             "4": "Dedicated Instances"
         },
         "correct_answers": [
-            "options.3"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -1140,9 +1141,9 @@
             "4": "Spending money running and maintaining data centers"
         },
         "correct_answers": [
-            "options.1"
+            "options.2"
         ],
-        "description": "",
+        "description": "Trade variable expense for fixed expense: This is actually the opposite of one of the key benefits of AWS. Cloud computing often allows organizations to trade capital expense (fixed) for variable expense.",
         "source_url": ""
     },
     {
@@ -1155,9 +1156,9 @@
             "4": "Platform architecture"
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
-        "description": "",
+        "description": "Data monetization: This capability is part of the Business Perspective. Data monetization involves turning data into tangible business value, which is a strategic business activity that aligns with driving business outcomes through effective use of cloud technologies.",
         "source_url": ""
     },
     {
@@ -2479,7 +2480,7 @@
             "4": "Reserved Instance reporting"
         },
         "correct_answers": [
-            "options.1"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2528,7 +2529,7 @@
             "4": "Spot Instances"
         },
         "correct_answers": [
-            "options.3"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2543,7 +2544,7 @@
             "4": "IAM user SSH keys"
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -2575,7 +2576,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "Amazon S3 File Gateway (previously known as File Gateway) enables you to store and retrieve objects in Amazon S3 using file protocols such as NFS. It is an ideal solution for integrating existing applications with AWS cloud storage while keeping the performance and availability of local file systems. This type of gateway provides a seamless way to connect on-premises file-based applications to S3 object storage, making it well-suited for NFS workloads that need to be migrated to the cloud.",
         "source_url": ""
     },
     {
@@ -2603,7 +2604,7 @@
             "4": "Dedicated Hosts"
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
