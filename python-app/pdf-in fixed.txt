@@ -485,7 +485,7 @@ A. Management of IAM user permissions
 B. Creation of security group rules for outbound access
 C. Maintenance of physical and environmental controls
 D. Application of Amazon EC2 operating system patches
-Answer: A
+Answer: C
 QUESTION 56
 A company wants to automate infrastructure deployment by using infrastructure as code (IaC).
 The company wants to scale production stacks so the stacks can be deployed in multiple AWS
@@ -604,6 +604,11 @@ B. Operations
 C. Security
 D. Governance
 Answer: B
+Explanation:
+Operations: This perspective specifically addresses the ongoing management and monitoring 
+of cloud resources. It encompasses how to run and use cloud environments efficiently. 
+This includes capabilities such as configuration management and patch management, 
+which are crucial for maintaining the operational health, performance, and security of cloud resources.
 QUESTION 70
 A company has a compute workload that is steady, predictable, and uninterruptible.
 Which Amazon EC2 instance purchasing options meet these requirements MOST costeffectively? (Choose two.)
@@ -612,7 +617,7 @@ B. Reserved Instances
 C. Spot Instances
 D. Saving Plans
 E. Dedicated Hosts
-Answer: BE
+Answer: BD
 QUESTION 71
 Which Amazon EC2 pricing model is the MOST cost efficient for an uninterruptible workload that
 runs once a year for 24 hours?
@@ -620,7 +625,7 @@ A. On-Demand Instances
 B. Reserved Instances
 C. Spot Instances
 D. Dedicated Instances
-Answer: C
+Answer: A
 QUESTION 72
 Which option is a shared responsibility between AWS and its customers under the AWS shared
 responsibility model?
@@ -652,7 +657,10 @@ A. Trade variable expense for fixed expense
 B. Pay-as-you-go pricing
 C. Decreased speed and agility
 D. Spending money running and maintaining data centers
-Answer: A
+Answer: B
+Explanation:
+Trade variable expense for fixed expense: This is actually the opposite of one of the key benefits 
+of AWS. Cloud computing often allows organizations to trade capital expense (fixed) for variable expense.
 QUESTION 76
 Which option is an AWS Cloud Adoption Framework (AWS CAF) business perspective
 capability?
@@ -660,7 +668,12 @@ A. Culture evolution
 B. Event management
 C. Data monetization
 D. Platform architecture
-Answer: A
+Answer: C
+Explanation:
+Data monetization: This capability is part of the Business Perspective. 
+Data monetization involves turning data into tangible business value, 
+which is a strategic business activity that aligns with driving business outcomes through 
+effective use of cloud technologies.
 QUESTION 77
 A company is assessing its AWS Business Support plan to determine if the plan still meets the
 company's needs. The company is considering switching to AWS Enterprise Support.
@@ -1766,7 +1779,7 @@ A. Cost Explorer
 B. AWS Budgets
 C. AWS Cost and Usage Report
 D. Reserved Instance reporting
-Answer: A
+Answer: B
 QUESTION 163
 Which tasks are the customer's responsibility, according to the AWS shared responsibility model?
 (Choose two.)
@@ -1794,7 +1807,7 @@ A. Resource tagging
 B. Consolidated billing
 C. Pay-as-you-go pricing
 D. Spot Instances
-Answer: C
+Answer: B
 QUESTION 166
 A user wants to allow applications running on an Amazon EC2 instance to make calls to other
 AWS services. The access granted must be secure.
@@ -1803,7 +1816,7 @@ A. Security groups
 B. AWS Firewall Manager
 C. IAM roles
 D. IAM user SSH keys
-Answer: A
+Answer: C
 QUESTION 167
 A company wants a fully managed Windows file server for its Windows-based applications.
 Which AWS service will meet this requirement?
@@ -1820,6 +1833,14 @@ B. Volume Gateway
 C. Amazon FSx File Gateway
 D. Amazon S3 File Gateway
 Answer: D
+Explanation:
+Amazon S3 File Gateway (previously known as File Gateway) enables you to store and retrieve objects 
+in Amazon S3 using file protocols such as NFS. 
+It is an ideal solution for integrating existing applications with AWS cloud storage 
+while keeping the performance and availability of local file systems. 
+This type of gateway provides a seamless way to connect on-premises file-based 
+applications to S3 object storage, making it well-suited for NFS workloads that 
+need to be migrated to the cloud.
 QUESTION 169
 A company needs to track the activity in its AWS accounts, and needs to know when an API call
 is made against its AWS resources.
@@ -1838,7 +1859,7 @@ A. Spot Instances
 B. On-Demand Instances
 C. Savings Plans
 D. Dedicated Hosts
-Answer: A
+Answer: C
 QUESTION 171
 A company wants an AWS service to provide product recommendations based on its customer
 data.
