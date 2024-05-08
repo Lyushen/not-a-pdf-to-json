@@ -2761,6 +2761,8 @@ B. On-Demand
 C. Dedicated Hosts
 D. Spot Instances
 Answer: D
+Explanation:
+Spot Instances allow you to take advantage of unused EC2 capacity in the AWS cloud at significant discounts. The cost savings can reach up to 90% off the On-Demand rates, making this option extremely cost-effective for applications with flexible start and end times or that can withstand interruptions.
 QUESTION 263
 Which of the following acts as an instance-level firewall to control inbound and outbound access?
 A. Network access control list
@@ -2768,6 +2770,8 @@ B. Security groups
 C. AWS Trusted Advisor
 D. Virtual private gateways
 Answer: B
+Explanation:
+Security groups in AWS act as a virtual firewall for your EC2 instances to control both inbound and outbound traffic at the instance level. They allow you to specify allowable protocols, ports, and source/destination IP ranges - effectively managing access to the instances
 QUESTION 264
 A company must be able to develop, test, and launch an application in the AWS Cloud quickly.
 Which advantage of cloud computing will meet these requirements?
@@ -2787,6 +2791,8 @@ B. IAM roles
 C. IAM instance profiles
 D. IAM policies for individual users
 Answer: B
+Explanation:
+IAM roles are ideal for this scenario because they can be assumed by anyone who needs them, depending on their current job responsibilities. Instead of directly managing individual user permissions, you can assign roles that carry the necessary permissions. 
 QUESTION 266
 Which AWS service can a company use to securely store and encrypt passwords for a database?
 A. AWS Shield
@@ -2794,6 +2800,8 @@ B. AWS Secrets Manager
 C. AWS Identity and Access Management (IAM)
 D. Amazon Cognito
 Answer: B
+Explanation:
+AWS Secrets Manager is designed specifically for handling and protecting secrets needed to access applications, services, and IT resources. This service enables you to securely store, manage, and retrieve database credentials, API keys, and other secrets throughout their lifecycle. It also supports automatic rotation of secrets, making it an ideal choice for managing sensitive information like database passwords securely.
 QUESTION 267
 What can a cloud practitioner use to retrieve AWS security and compliance documents and
 submit them as evidence to an auditor or regulator?
@@ -2810,6 +2818,9 @@ C. TLS
 D. SSL
 E. Transparent Data Encryption (TDE)
 Answer: AB
+Explanation:
+Server-side encryption with Amazon S3 managed encryption keys (SSE-S3) - This method uses Amazon S3-managed keys to encrypt data stored at rest automatically. Amazon handles the encryption, decryption, and key management in a fully transparent fashion.
+Server-side encryption with AWS KMS managed keys (SSE-KMS) - This method uses AWS Key Management Service (KMS) for key management. It provides additional benefits like user control and audit trails, which allow for better management and monitoring of keys used to encrypt data.
 QUESTION 269
 A company wants to integrate its online shopping website with social media login credentials.
 Which AWS service can the company use to make this integration?
@@ -2818,6 +2829,8 @@ B. AWS Identity and Access Management (IAM)
 C. Amazon Cognito
 D. AWS IAM Identity Center (AWS Single Sign-On)
 Answer: C
+Explanation:
+Amazon Cognito provides user identity and data synchronization services, which allow the creation of authentication solutions including user sign-up, sign-in, and access control. Specifically, it supports authentication with external identity providers such as Facebook, Google, and Amazon, as well as enterprise identity providers via SAML 2.0.
 QUESTION 270
 Which AWS service is used to track, record, and audit configuration changes made to AWS
 resources?
@@ -2826,6 +2839,8 @@ B. AWS Config
 C. AWS IAM
 D. Amazon Inspector
 Answer: B
+Explanation:
+AWS Config is specifically designed to help you understand and audit the configurations of your AWS resources. It continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. This service helps in maintaining security and compliance by enabling visibility into and assessment of your AWS environment's configuration changes over time.
 QUESTION 271
 A customer runs an On-Demand Amazon Linux EC2 instance for 3 hours, 5 minutes, and 6
 seconds.
@@ -2835,6 +2850,8 @@ B. 3 hours, 5 minutes, and 6 seconds
 C. 3 hours, 6 minutes
 D. 4 hours
 Answer: C
+Explanation:
+AWS bills EC2 instances on a per-second basis, with a minimum charge of 60 seconds. However, the billing is rounded up to the nearest minute. Since the instance was used for 3 hours, 5 minutes, and 6 seconds, the billing will be rounded up from 3 hours, 5 minutes, and 6 seconds to 3 hours and 6 minutes.
 QUESTION 272
 A company website is experiencing DDoS attacks.
 Which AWS service can help protect the company website against these attacks?
@@ -2852,6 +2869,8 @@ B. Amazon Inspector
 C. AWS Control Tower
 D. Migration Evaluator
 Answer: D
+Explanation:
+Migration Evaluator is specifically designed to analyze existing on-premises environments, forecast the costs of running similar resources in AWS, and assist in planning migrations to the cloud. This tool provides detailed insights into cost savings and benefits of moving to AWS, making it ideal for companies planning a migration and needing detailed financial forecasts.
 QUESTION 274
 A company that has multiple business units wants to centrally manage and govern its AWS Cloud
 environments. The company wants to automate the creation of AWS accounts, apply service
@@ -2862,6 +2881,8 @@ B. Cost Explorer
 C. AWS Budgets
 D. AWS Trusted Advisor
 Answer: A
+Explanation:
+AWS Organizations is an account management service that enables you to consolidate multiple AWS accounts into an organization that you create and centrally manage. AWS Organizations includes account management and consolidated billing capabilities that enable you to better meet the budgetary, security, and compliance needs of your business. As an administrator of an organization, you can create accounts in your organization and invite existing accounts to join the organization
 QUESTION 275
 A company is hosting an application in the AWS Cloud. The company wants to verify that
 underlying AWS services and general AWS infrastructure are operating normally.
@@ -2873,6 +2894,9 @@ C. AWS Trusted Advisor
 D. AWS Service Health Dashboard
 E. AWS Service Catalog
 Answer: AD
+Explanation:
+AWS Personal Health Dashboard: This service provides a personalized view into the performance and availability of the AWS services that you are using, along with alerts to potential issues affecting your environment. It helps track the health of your resources and offers notifications and remediation guidance when AWS detects issues that may impact you.
+AWS Service Health Dashboard: This provides a public view of the status and health of various AWS services across different geographic regions. It is useful for monitoring overall service status and for detecting widespread issues with AWS services.
 QUESTION 276
 A company needs to migrate a PostgreSQL database from on-premises to Amazon RDS.
 Which AWS service or tool should the company use to meet this requirement?
@@ -2881,6 +2905,8 @@ B. AWS Migration Hub
 C. AWS Database Migration Service (AWS DMS)
 D. AWS Application Migration Service
 Answer: C
+Explanation:
+AWS Database Migration Service (AWS DMS) is a managed migration and replication service that helps you move your databases and analytics workloads to AWS quickly and securely.
 QUESTION 277
 Which cloud concept is demonstrated by using AWS Compute Optimizer?
 A. Security validation
@@ -2888,6 +2914,8 @@ B. Rightsizing
 C. Elasticity
 D. Global reach
 Answer: B
+Explanation:
+AWS Compute Optimizer analyzes the utilization metrics of your Amazon EC2 instances and provides recommendations for rightsizing them to improve performance and reduce costs. By suggesting the optimal instance types and sizes based on historical usage patterns, Compute Optimizer helps you ensure that your resources are appropriately provisioned to meet your workload requirements without overprovisioning or underprovisioning.
 QUESTION 278
 A company hosts a large amount of data in AWS. The company wants to identify if any of the
 data should be considered sensitive.
@@ -2919,6 +2947,8 @@ B. Record API calls made to AWS services.
 C. Assess the compliance of AWS resource configurations with policies and guidelines.
 D. Ensure that Amazon EC2 instances are patched with the latest security updates.
 Answer: B
+Explanation:
+CloudTrail enables auditing, security monitoring, and operational troubleshooting by tracking user activity and API usage. CloudTrail logs, continuously monitors, and retains account activity related to actions across your AWS infrastructure, giving you control over storage, analysis, and remediation actions.
 QUESTION 282
 A company is planning to host its workloads on AWS.
 Which AWS service requires the company to update and patch the guest operating system?
@@ -2927,6 +2957,8 @@ B. Amazon S3
 C. Amazon EC2
 D. Amazon Aurora
 Answer: C
+Explanation:
+Amazon EC2 (Elastic Compute Cloud) is the AWS service that provides resizable compute capacity in the cloud. When you use EC2 instances, you have control over the guest operating system, and it is your responsibility to update and patch the operating system.
 QUESTION 283
 Which AWS service or feature will search for and identify AWS resources that are shared
 externally?
@@ -2935,6 +2967,8 @@ B. AWS Control Tower
 C. AWS IAM Access Analyzer
 D. AWS Fargate
 Answer: C
+Explanation:
+AWS IAM Access Analyzer is a service that helps you identify and manage access permissions in your AWS environment. It includes the ability to analyze resource policies to check for unintended external sharing of resources. Access Analyzer can identify AWS resources that are shared externally, providing insights into potential security risks and allowing you to adjust access policies accordingly
 QUESTION 284
 A company is migrating its workloads to the AWS Cloud. The company must retain full control of
 patch management for the guest operating systems that host its applications.
@@ -2944,6 +2978,8 @@ B. Amazon EC2
 C. AWS Lambda
 D. Amazon RDS
 Answer: B
+Explanation:
+Amazon EC2 (Elastic Compute Cloud) is the AWS service that provides resizable compute capacity in the cloud. When you use EC2 instances, you have control over the guest operating system, and it is your responsibility to update and patch the operating system.
 QUESTION 285
 At what support level do users receive access to a support concierge?
 A. Basic Support
@@ -2951,6 +2987,8 @@ B. Developer Support
 C. Business Support
 D. Enterprise Support
 Answer: D
+Explanation:
+Users receive access to a support concierge at the Enterprise Support level. With AWS Enterprise Support, customers have access to a support concierge who can help with case management, provide guidance on best practices, and assist with various AWS-related inquiries. This level of support is designed for organizations with mission-critical workloads and larger-scale AWS implementations.
 QUESTION 286
 Which AWS service can a company use to visually design and build serverless applications?
 A. AWS Lambda
@@ -2958,6 +2996,8 @@ B. AWS Batch
 C. AWS Application Composer
 D. AWS App Runner
 Answer: C
+Explanation:
+This service provides a visual interface for designing, building, and deploying serverless applications using AWS Lambda, Amazon API Gateway, Amazon DynamoDB, and other AWS services. It allows users to visually create workflows and connect different components of their serverless applications without needing to write code manually.
 QUESTION 287
 A company wants to migrate to AWS and use the same security software it uses on premises.
 The security software vendor offers its security software as a service on AWS.
@@ -2985,6 +3025,8 @@ B. Amazon RDS for PostgreSQL
 C. Amazon Aurora PostgreSQL-Compatible Edition
 D. Amazon Aurora Serverless
 Answer: D
+Explanation:
+Amazon Aurora Serverless is a fully managed relational database service that automatically scales compute capacity up or down based on the application's needs. It is ideal for workloads with unpredictable or intermittent usage patterns, as it automatically starts and stops database instances based on demand. This means the company doesn't need to provision or manage the database instance themselves, resulting in minimal management overhead. 
 QUESTION 290
 A company is using Amazon DynamoDB for its application database.
 Which tasks are the responsibility of AWS, according to the AWS shared responsibility model?
@@ -2995,6 +3037,9 @@ C. Manage encryption options.
 D. Provide public endpoints to store and retrieve data.
 E. Manage the infrastructure layer and the operating system.
 Answer: DE
+Explanation:
+AWS is responsible for providing public endpoints to access services like Amazon DynamoDB.
+AWS manages the underlying infrastructure, including the physical security of the data centers, as well as the operating system on which DynamoDB runs.
 QUESTION 291
 A company wants to create a globally accessible ecommerce platform for its customers. The
 company wants to use a highly available and scalable DNS web service to connect users to the
@@ -3005,6 +3050,8 @@ B. Amazon VPC
 C. Amazon Route 53
 D. Amazon RDS
 Answer: C
+Explanation:
+Amazon Route 53 is a scalable and highly available Domain Name System (DNS) web service designed to route end users to internet applications by translating human-readable domain names into IP addresses. It offers features such as global routing, latency-based routing, health checks, and DNS failover to ensure high availability and performance for web applications. 
 QUESTION 292
 Which maintenance task is the customer's responsibility, according to the AWS shared
 responsibility model?
@@ -3021,6 +3068,8 @@ B. Amazon Detective
 C. Amazon CloudWatch
 D. AWS CloudTrail
 Answer: D
+Explanation:
+AWS CloudTrail enables governance, compliance, operational auditing, and risk auditing of your AWS account. It records all API actions taken in your AWS account, including who performed the action, the services used, the actions performed, and when they occurred. 
 QUESTION 294
 A company is migrating to the AWS Cloud and plans to run experimental workloads for 3 to 6
 months on AWS.
@@ -3030,6 +3079,8 @@ B. Use Dedicated Hosts.
 C. Buy Reserved Instances.
 D. Use On-Demand Instances.
 Answer: D
+Explanation:
+On-Demand Instances allow you to pay for compute capacity by the hour or by the second with no long-term commitments. This flexibility is well-suited for experimental workloads where the duration of usage may vary, and there's no certainty about the workload's long-term requirements. 
 QUESTION 295
 A company that has AWS Enterprise Support is launching a new version of a popular product in 2
 months. The company expects a large increase in traffic to its website. The website is hosted on
