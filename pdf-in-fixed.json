@@ -170,11 +170,10 @@
         "id": "12",
         "question": "A company is using Amazon DynamoDB. Which task is the company's responsibility, according to the AWS shared responsibility model?",
         "options": {
-            "1": "Which task is the company's responsibility, according to the AWS shared responsibility model?",
-            "2": "Patch the operating system.",
-            "3": "Provision hosts.",
-            "4": "Manage database access permissions.",
-            "5": "Secure the operating system."
+            "2": "Provision hosts.",
+            "1": "Patch the operating system.",
+            "3": "Manage database access permissions.",
+            "4": "Secure the operating system."
         },
         "correct_answers": [
             "options.3"
@@ -771,8 +770,7 @@
             "1": "Security group",
             "2": "AWS WAF",
             "3": "AWS Firewall Manager",
-            "4": "Network ACL",
-            "5": "They provide a layer of security at the subnet level, allowing you to specify both inbound and outbound \ntraffic rules that control traffic based on IP protocol, IP address range, and port number."
+            "4": "Network ACL"
         },
         "correct_answers": [
             "options.4"
@@ -1351,11 +1349,10 @@
         "id": "89",
         "question": "A company recently deployed an Amazon RDS instance in its VPC. The company needs to implement a stateful firewall to limit traffic to the private corporate network. Which AWS service or feature should the company use to limit network traffic directly to its RDS instance?",
         "options": {
-            "1": "The company needs to\nimplement a stateful firewall to limit traffic to the private corporate network.\nWhich AWS service or feature should the company use to limit network traffic directly to its RDS\ninstance?",
-            "2": "Network ACLs",
-            "3": "Security groups",
-            "4": "AWS WAF",
-            "5": "Amazon GuardDuty"
+            "3": "AWS WAF",
+            "1": "Network ACLs",
+            "2": "Security groups",
+            "4": "Amazon GuardDuty"
         },
         "correct_answers": [
             "options.2"
@@ -2218,8 +2215,7 @@
             "2": "Amazon RDS",
             "3": "Amazon Redshift",
             "4": "Amazon DocumentDB (with MongoDB compatibility)",
-            "5": "Amazon DynamoDB",
-            "6": "Dynamo DB and Document DB are the only No-SQL options."
+            "5": "Amazon DynamoDB"
         },
         "correct_answers": [
             "options.4",
@@ -2666,7 +2662,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "EC2 Image Builder is a service designed to make it easier and faster to build and maintain secure and compliant EC2 machine images, also known as Amazon Machine Images (AMIs). This service automates the creation, testing, and distribution of AMIs, ensuring that the images are up-to-date with the latest OS updates, patches, and configurations required for compliance or security.",
         "source_url": ""
     },
     {
@@ -2923,9 +2919,9 @@
             "4": "Cloud financial management"
         },
         "correct_answers": [
-            "options.3"
+            "options.1"
         ],
-        "description": "",
+        "description": "Benefits management within the AWS CAF governance perspective is specifically tailored to help organizations identify, manage, and realize the benefits of cloud adoption. This capability focuses on aligning the cloud strategy with business objectives and tracking the realization of those benefits over time. By utilizing benefits management, the company can systematically measure and manage the outcomes related to its cloud investments, ensuring that the desired business goals are achieved as a result of the cloud transformation.",
         "source_url": ""
     },
     {
@@ -3090,7 +3086,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "Amazon S3 (Simple Storage Service) is designed for durability, scalability, and cost-effectiveness. It is an object storage service that can handle large volumes of unstructured data such as logs, making it ideal for storing server logs. S3 provides various storage classes tailored for different use cases, including infrequently accessed data or data that requires frequent access. This flexibility allows you to optimize costs based on how often the logs are accessed.",
         "source_url": ""
     },
     {
@@ -3212,7 +3208,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "Multi-AZ deployment for Amazon RDS involves the DB instance being replicated synchronously to a standby instance in a different Availability Zone (AZ). In the event of a planned or unplanned outage of the primary DB instance (including database software patching, hardware failure, and network issues), RDS automatically fails over to the standby so that database operations can resume quickly without administrative intervention. This automatic failover mechanism typically achieves a recovery time well under 5 minutes, ensuring high availability. Not C :regular snapshots are important for backup purposes and can help in disaster recovery scenarios, but they do not support immediate failover. Recovery from snapshots can be time-consuming depending on the size of the database and thus does not support a recovery time of less than 5 minutes.",
         "source_url": ""
     },
     {
@@ -3347,7 +3343,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "AWS IAM Identity Center (AWS Single Sign-On) is designed specifically to address the need for single sign-on (SSO) capabilities across AWS services and third-party applications. It enables users to access multiple services and applications through a single user login using SAML 2.0, simplifying the authentication process and improving security management. AWS IAM Identity Center supports integration with various SAML 2.0 compatible applications, making it the ideal choice for this requirement.",
         "source_url": ""
     },
     {
@@ -3362,7 +3358,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "The AWS Health Dashboard is a centralized location where users can find information about the availability and operation of AWS services. It provides an overview of the current status of AWS services, including planned and unplanned events. Users can also search for specific services to get more detailed information.",
         "source_url": ""
     },
     {
@@ -3437,7 +3433,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "AWS Application Discovery Service helps enterprises plan migration projects by gathering information about on-premises data centers. It collects and presents configuration, usage, and behavior data from servers to help you better understand your workloads. This includes details such as hostnames, IP addresses, and MAC addresses.",
         "source_url": ""
     },
     {
@@ -3476,7 +3472,7 @@
         "options": {
             "1": "Amazon S3 is a high-performance block storage service that is designed for use with Amazon\nEC2.",
             "2": "Amazon S3 is an object storage service that provides high-level performance, security, scalability,\nand data availability.",
-            "3": "Amazon S3 is a fully managed, highly reliable, and scalable file storage system that is accessible\nover the industry-standard SMB protocol.",
+            "3": "Amazon S3 is a fully managed, highly reliable, and scalable file storage system that is accessible over the industry-standard SMB protocol.",
             "4": "Amazon S3 is a scalable, fully managed elastic NFS for use with AWS Cloud services and onpremises resources."
         },
         "correct_answers": [
@@ -3623,7 +3619,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "Amazon SQS is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. It supports both standard and FIFO queues, with FIFO queues ensuring that messages are processed exactly once, in the order that they are sent. This aligns with the requirement of processing messages in first-in, first-out (FIFO) order.",
         "source_url": ""
     },
     {
@@ -3638,7 +3634,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "It is a browser-based, pre-authenticated service that provides you with a Linux shell interface directly within the AWS Management Console. With AWS CloudShell, you can run various AWS CLI commands, use pre-installed tools, and develop scripts without the need to manage or provision any resources.",
         "source_url": ""
     },
     {
@@ -3655,7 +3651,7 @@
             "options.2",
             "options.5"
         ],
-        "description": "",
+        "description": "mazon RDS (Relational Database Service): Amazon RDS supports PostgreSQL as one of the database engines. It provides managed database services, handling routine tasks like hardware provisioning, database setup, patching, and backups. Amazon Aurora: Amazon Aurora is a MySQL and PostgreSQL-compatible relational database engine provided by AWS. It offers high performance, availability, and durability, making it suitable for migrating PostgreSQL databases.",
         "source_url": ""
     },
     {
@@ -3685,7 +3681,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "IAM roles are used to grant permissions to entities within or outside of AWS. In this scenario, you would create an IAM role and attach it to the EC2 instances hosting the application. The IAM role would have the necessary permissions to interact with Amazon SNS, allowing the application running on the EC2 instances to send messages through Amazon SNS.",
         "source_url": ""
     },
     {
@@ -3700,7 +3696,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "AWS Elastic Beanstalk is a Platform as a Service (PaaS) offering from AWS that simplifies the deployment and management of applications. It automatically handles the deployment, capacity provisioning, load balancing, and auto-scaling of the application, allowing developers to focus on writing code. With Elastic Beanstalk, you can quickly deploy your Node.js application without needing to manage the underlying infrastructure.",
         "source_url": ""
     },
     {
@@ -3715,7 +3711,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "Amazon CloudFront is a web service that gives businesses and web application developers an easy and cost effective way to distribute content with low latency and high data transfer speeds. Like other AWS services, Amazon CloudFront is a self-service, pay-per-use offering, requiring no long term commitments or minimum fees. With CloudFront, your files are delivered to end-users using a global network of edge locations.",
         "source_url": ""
     },
     {
@@ -3730,7 +3726,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "AWS Marketplace is an online store that makes it easy for customers to find, buy, and immediately start using software and services that run on AWS. It offers a wide selection of third-party software products, including solutions for various use cases such as security, machine learning, databases, and more. Customers can search for software, compare options, and choose the product that best fits their needs. Once purchased, the software can be deployed directly on AWS infrastructure.",
         "source_url": ""
     },
     {
@@ -3745,7 +3741,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "Amazon FSx for Windows File Server is a fully managed, highly reliable, and scalable file storage service that is accessible over the Server Message Block (SMB) protocol. It provides fully managed, highly reliable, and scalable file storage that is accessible over the SMB protocol. It is designed to work with the Microsoft Windows operating system and it supports the SMB protocol which allows to access the file storage from Windows servers and clients.",
         "source_url": ""
     },
     {
@@ -3760,7 +3756,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "AWS Firewall Manager is a security management service that allows you to centrally configure and manage firewall rules across multiple AWS accounts and resources. It integrates with AWS Organizations, allowing you to apply security policies at scale across your organization. With Firewall Manager, you can create security group policies that define the desired rules for your VPC security groups and apply them consistently across accounts and VPCs. This helps ensure uniform security posture and compliance with organizational security policies.",
         "source_url": ""
     },
     {
@@ -3790,7 +3786,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "A NAT gateway allows instances in a private subnet to initiate outbound traffic to the internet while preventing inbound traffic from reaching those instances. It acts as a middleman for internet-bound traffic, providing a source IP address for the instance while masking its private IP. This setup allows the EC2 instance to access the internet for tasks such as pulling operating system updates while maintaining security by not allowing inbound connections from the internet to the instance.",
         "source_url": ""
     },
     {
@@ -3807,7 +3803,7 @@
             "options.1",
             "options.4"
         ],
-        "description": "",
+        "description": "AWS is responsible for securing the underlying infrastructure, including the virtualization layer and the hardware. This means they ensure the security of the physical servers, networking, and virtualization infrastructure that supports the cloud deployment.",
         "source_url": ""
     },
     {
@@ -3822,7 +3818,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "S3 Glacier Flexible Retrieval (formerly known as S3 Glacier) is specifically designed for data that is infrequently accessed and where retrieval times of several hours are acceptable. It offers low storage costs per gigabyte and supports retrieval times that can be configured from a few minutes to several hours. The 12-hour retrieval time requirement fits well within this storage class's capabilities. Wrong:S3 One Zone-Infrequent Access (S3 One Zone-IA) offers lower storage costs for infrequently accessed data but stores the data in only one Availability Zone, which could be riskier in terms of data durability if that zone is affected by an outage or failure. Also, it provides immediate access, which might be more than needed in this scenario.",
         "source_url": ""
     },
     {
@@ -3837,7 +3833,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "AWS Identity and Access Management (IAM) Access Analyzer: This tool helps identify resources that are shared with external entities by analyzing policies. It can be used to check for unintended permissions and access patterns, and although primarily designed for auditing permissions, it can be part of a broader strategy to analyze and audit who accessed what services within AWS based on policy analysis and access patterns.",
         "source_url": ""
     },
     {
@@ -3852,7 +3848,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "AWS Partner Network (APN): This is the global partner program for technology and consulting businesses who leverage Amazon Web Services to build solutions and services for customers. The APN includes a diverse set of partners such as Managed Service Providers (MSPs), Independent Software Vendors (ISVs), and System Integrators (SIs), all of whom can be engaged to provide additional support, maintenance, and professional services to help manage a company's AWS environment.",
         "source_url": ""
     },
     {
@@ -3862,12 +3858,12 @@
             "1": "AWS Budgets",
             "2": "AWS Cost Explorer",
             "3": "AWS Cost and Usage Report",
-            "4": "AWS Cost Anomaly Detection"
+            "4": "AWS Cost Anomaly Detection\nExplanation:\nAWS Cost and Usage Report delivers detailed data about AWS costs and usage, which can be directly used to feed Amazon QuickSight for creating detailed and customized billing dashboards. It is specifically designed to provide comprehensive data suitable for in-depth analysis and reporting."
         },
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "AWS Cost and Usage Report delivers detailed data about AWS costs and usage, which can be directly used to feed Amazon QuickSight for creating detailed and customized billing dashboards. It is specifically designed to provide comprehensive data suitable for in-depth analysis and reporting. Answer: C",
         "source_url": ""
     },
     {
@@ -3882,7 +3878,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "AWS Storage Gateway: This service seamlessly integrates on-premises environments with cloud storage for backup and storage solutions. It provides a hybrid storage solution that allows data to be cached locally on your on-premises hardware, while synchronously backing up data to AWS cloud storage. This meets both the cloud storage and local caching requirements.",
         "source_url": ""
     },
     {
@@ -3897,7 +3893,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "Tagging allows you to apply custom metadata tags to AWS resources. These tags can include identifiers such as department, environment, or application, enabling detailed organization according to the company's internal structures.",
         "source_url": ""
     },
     {
@@ -3912,7 +3908,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "AWS Batch: This service is specifically designed to enable developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS. AWS Batch dynamically provisions the optimal quantity and type of compute resources (like CPU or memory-optimized instances) based on the volume and specific requirements of the batch jobs submitted. This makes it ideal for large-scale processing tasks where managing the infrastructure scaling and job scheduling is handled by AWS, simplifying the setup.",
         "source_url": ""
     },
     {
@@ -3929,7 +3925,7 @@
             "options.1",
             "options.4"
         ],
-        "description": "",
+        "description": "Route 53 effectively routes end user requests to infrastructure running in AWS, such as Amazon EC2 instances, Elastic Load Balancing load balancers, or Amazon S3 buckets, and can do so across different AWS Regions. It supports health checking and DNS failover capabilities, which help ensure high availability by rerouting traffic to healthy endpoints, potentially across multiple regions. AWS Global Accelerator: This service improves the availability and performance of your applications with global traffic distribution. It directs traffic to optimal endpoints over the AWS global network, enhances internet performance by up to 60%, and provides failover across AWS Regions, reducing latency and improving fault tolerance for your applications.",
         "source_url": ""
     },
     {
@@ -3944,7 +3940,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "This option refers to the ability of EC2 Auto Scaling to automatically adjust the number of instances in a group, adding instances (scaling out) when demand is high and removing instances (scaling in) when demand drops. This ensures that the number of instances matches the load without manual intervention, improving cost efficiency and performance.",
         "source_url": ""
     },
     {
@@ -3961,7 +3957,7 @@
             "options.2",
             "options.4"
         ],
-        "description": "",
+        "description": "Deploy globally in minutes. - AWS allows you to quickly set up and deploy your applications in multiple regions around the world, enabling faster access and a better experience for end users by minimizing latency. Take advantage of economies of scale. - AWS's massive scale allows it to offer lower pay-as-you-go prices. The larger the scale of AWS operations, the cheaper the costs for its customers, as they benefit from the bulk pricing advantages.",
         "source_url": ""
     },
     {
@@ -3976,7 +3972,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "AWS Shield is specifically designed to safeguard applications from DDoS attacks. It provides always-on detection and automatic response mechanisms to mitigate such attacks, ensuring that applications remain available and performant. AWS Shield comes in two tiers: Standard and Advanced, with the Advanced tier offering additional protection features and support options for more complex and larger scale DDoS threats.",
         "source_url": ""
     },
     {
@@ -3991,7 +3987,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "The AWS CDK lets developers define their cloud resources using familiar programming languages such as JavaScript, TypeScript, Python, Java, and C#. This approach provides developers with the power to use the full capabilities of programming languages to define reusable cloud components and provision them through AWS CloudFormation.",
         "source_url": ""
     },
     {
@@ -4006,7 +4002,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "Spot Instances allow you to take advantage of unused EC2 capacity in the AWS cloud at significant discounts. The cost savings can reach up to 90% off the On-Demand rates, making this option extremely cost-effective for applications with flexible start and end times or that can withstand interruptions.",
         "source_url": ""
     },
     {
@@ -4021,7 +4017,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "Security groups in AWS act as a virtual firewall for your EC2 instances to control both inbound and outbound traffic at the instance level. They allow you to specify allowable protocols, ports, and source/destination IP ranges - effectively managing access to the instances",
         "source_url": ""
     },
     {
@@ -4051,7 +4047,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "IAM roles are ideal for this scenario because they can be assumed by anyone who needs them, depending on their current job responsibilities. Instead of directly managing individual user permissions, you can assign roles that carry the necessary permissions.",
         "source_url": ""
     },
     {
@@ -4066,7 +4062,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "AWS Secrets Manager is designed specifically for handling and protecting secrets needed to access applications, services, and IT resources. This service enables you to securely store, manage, and retrieve database credentials, API keys, and other secrets throughout their lifecycle. It also supports automatic rotation of secrets, making it an ideal choice for managing sensitive information like database passwords securely.",
         "source_url": ""
     },
     {
@@ -4098,7 +4094,7 @@
             "options.1",
             "options.2"
         ],
-        "description": "",
+        "description": "Server-side encryption with Amazon S3 managed encryption keys (SSE-S3) - This method uses Amazon S3-managed keys to encrypt data stored at rest automatically. Amazon handles the encryption, decryption, and key management in a fully transparent fashion. Server-side encryption with AWS KMS managed keys (SSE-KMS) - This method uses AWS Key Management Service (KMS) for key management. It provides additional benefits like user control and audit trails, which allow for better management and monitoring of keys used to encrypt data.",
         "source_url": ""
     },
     {
@@ -4113,7 +4109,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "Amazon Cognito provides user identity and data synchronization services, which allow the creation of authentication solutions including user sign-up, sign-in, and access control. Specifically, it supports authentication with external identity providers such as Facebook, Google, and Amazon, as well as enterprise identity providers via SAML 2.0.",
         "source_url": ""
     },
     {
@@ -4128,7 +4124,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "AWS Config is specifically designed to help you understand and audit the configurations of your AWS resources. It continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. This service helps in maintaining security and compliance by enabling visibility into and assessment of your AWS environment's configuration changes over time.",
         "source_url": ""
     },
     {
@@ -4143,7 +4139,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "AWS bills EC2 instances on a per-second basis, with a minimum charge of 60 seconds. However, the billing is rounded up to the nearest minute. Since the instance was used for 3 hours, 5 minutes, and 6 seconds, the billing will be rounded up from 3 hours, 5 minutes, and 6 seconds to 3 hours and 6 minutes.",
         "source_url": ""
     },
     {
@@ -4173,7 +4169,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "Migration Evaluator is specifically designed to analyze existing on-premises environments, forecast the costs of running similar resources in AWS, and assist in planning migrations to the cloud. This tool provides detailed insights into cost savings and benefits of moving to AWS, making it ideal for companies planning a migration and needing detailed financial forecasts.",
         "source_url": ""
     },
     {
@@ -4188,7 +4184,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "AWS Organizations is an account management service that enables you to consolidate multiple AWS accounts into an organization that you create and centrally manage. AWS Organizations includes account management and consolidated billing capabilities that enable you to better meet the budgetary, security, and compliance needs of your business. As an administrator of an organization, you can create accounts in your organization and invite existing accounts to join the organization",
         "source_url": ""
     },
     {
@@ -4205,7 +4201,7 @@
             "options.1",
             "options.4"
         ],
-        "description": "",
+        "description": "AWS Personal Health Dashboard: This service provides a personalized view into the performance and availability of the AWS services that you are using, along with alerts to potential issues affecting your environment. It helps track the health of your resources and offers notifications and remediation guidance when AWS detects issues that may impact you. AWS Service Health Dashboard: This provides a public view of the status and health of various AWS services across different geographic regions. It is useful for monitoring overall service status and for detecting widespread issues with AWS services.",
         "source_url": ""
     },
     {
@@ -4220,7 +4216,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "AWS Database Migration Service (AWS DMS) is a managed migration and replication service that helps you move your databases and analytics workloads to AWS quickly and securely.",
         "source_url": ""
     },
     {
@@ -4235,7 +4231,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "AWS Compute Optimizer analyzes the utilization metrics of your Amazon EC2 instances and provides recommendations for rightsizing them to improve performance and reduce costs. By suggesting the optimal instance types and sizes based on historical usage patterns, Compute Optimizer helps you ensure that your resources are appropriately provisioned to meet your workload requirements without overprovisioning or underprovisioning.",
         "source_url": ""
     },
     {
@@ -4295,7 +4291,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "CloudTrail enables auditing, security monitoring, and operational troubleshooting by tracking user activity and API usage. CloudTrail logs, continuously monitors, and retains account activity related to actions across your AWS infrastructure, giving you control over storage, analysis, and remediation actions.",
         "source_url": ""
     },
     {
@@ -4310,7 +4306,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "Amazon EC2 (Elastic Compute Cloud) is the AWS service that provides resizable compute capacity in the cloud. When you use EC2 instances, you have control over the guest operating system, and it is your responsibility to update and patch the operating system.",
         "source_url": ""
     },
     {
@@ -4325,7 +4321,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "AWS IAM Access Analyzer is a service that helps you identify and manage access permissions in your AWS environment. It includes the ability to analyze resource policies to check for unintended external sharing of resources. Access Analyzer can identify AWS resources that are shared externally, providing insights into potential security risks and allowing you to adjust access policies accordingly",
         "source_url": ""
     },
     {
@@ -4340,7 +4336,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "Amazon EC2 (Elastic Compute Cloud) is the AWS service that provides resizable compute capacity in the cloud. When you use EC2 instances, you have control over the guest operating system, and it is your responsibility to update and patch the operating system.",
         "source_url": ""
     },
     {
@@ -4355,7 +4351,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "Users receive access to a support concierge at the Enterprise Support level. With AWS Enterprise Support, customers have access to a support concierge who can help with case management, provide guidance on best practices, and assist with various AWS-related inquiries. This level of support is designed for organizations with mission-critical workloads and larger-scale AWS implementations.",
         "source_url": ""
     },
     {
@@ -4370,7 +4366,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "This service provides a visual interface for designing, building, and deploying serverless applications using AWS Lambda, Amazon API Gateway, Amazon DynamoDB, and other AWS services. It allows users to visually create workflows and connect different components of their serverless applications without needing to write code manually.",
         "source_url": ""
     },
     {
@@ -4415,7 +4411,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "Amazon Aurora Serverless is a fully managed relational database service that automatically scales compute capacity up or down based on the application's needs. It is ideal for workloads with unpredictable or intermittent usage patterns, as it automatically starts and stops database instances based on demand. This means the company doesn't need to provision or manage the database instance themselves, resulting in minimal management overhead.",
         "source_url": ""
     },
     {
@@ -4432,7 +4428,7 @@
             "options.4",
             "options.5"
         ],
-        "description": "",
+        "description": "AWS is responsible for providing public endpoints to access services like Amazon DynamoDB. AWS manages the underlying infrastructure, including the physical security of the data centers, as well as the operating system on which DynamoDB runs.",
         "source_url": ""
     },
     {
@@ -4447,7 +4443,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "Amazon Route 53 is a scalable and highly available Domain Name System (DNS) web service designed to route end users to internet applications by translating human-readable domain names into IP addresses. It offers features such as global routing, latency-based routing, health checks, and DNS failover to ensure high availability and performance for web applications.",
         "source_url": ""
     },
     {
@@ -4477,7 +4473,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "AWS CloudTrail enables governance, compliance, operational auditing, and risk auditing of your AWS account. It records all API actions taken in your AWS account, including who performed the action, the services used, the actions performed, and when they occurred.",
         "source_url": ""
     },
     {
@@ -4492,7 +4488,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "On-Demand Instances allow you to pay for compute capacity by the hour or by the second with no long-term commitments. This flexibility is well-suited for experimental workloads where the duration of usage may vary, and there's no certainty about the workload's long-term requirements.",
         "source_url": ""
     },
     {
@@ -4507,7 +4503,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "AWS IEM is a part of the AWS Enterprise Support plan, specifically designed to help organizations that are expecting to handle high volumes of traffic for events like product launches or promotional events. It involves working closely with AWS support engineers who provide architectural and operational guidance tailored to the event\u2019s needs.",
         "source_url": ""
     },
     {
@@ -4522,7 +4518,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "AWS Organizations: Using AWS Organizations to create separate accounts for each business unit offers a structured way to manage billing, access, and compliance across multiple AWS accounts. By having separate accounts for each business unit, the company can easily track costs and usage per account, which simplifies cost allocation and reporting.",
         "source_url": ""
     },
     {
@@ -4537,7 +4533,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "mazon Timestream: This is a fully managed time-series database service, designed specifically for time-stamped data. Timestream excels at handling large volumes of time-series data, which makes it ideal for applications that generate trillions of events daily.",
         "source_url": ""
     },
     {
@@ -4567,7 +4563,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "Spot Instances are ideal for stateless, fault-tolerant, and flexible applications because even if a Spot Instance is terminated by AWS (when AWS needs the capacity back), the stateless nature of the workload means it can be easily restarted on another instance with minimal disruption.",
         "source_url": ""
     },
     {
@@ -4582,7 +4578,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "Given that the data can be regenerated if lost, the risk associated with storing data in only one Availability Zone (as opposed to multiple zones) is mitigated. This aligns well with the use of S3 One Zone-IA, which does not replicate data across multiple zones and thus, costs less.",
         "source_url": ""
     },
     {
@@ -4836,7 +4832,8 @@
             "5": "Continuous development"
         },
         "correct_answers": [
-            "options.2"
+            "options.2",
+            "options.3"
         ],
         "description": "Performance efficiency and Cost optimization are the pillars of the Framework from the choose.",
         "source_url": ""
@@ -4917,7 +4914,7 @@
             "options.2",
             "options.4"
         ],
-        "description": "",
+        "description": "AWS Trusted Advisor provides insights into how you can save money on AWS by highlighting underutilized resources or opportunities to switch to less expensive alternatives. It identifies unused or idle resources and excess capacity to help reduce unnecessary costs. Trusted Advisor performs checks against your AWS environment to ensure it conforms to security best practices. This includes checks for security groups, IAM use, MFA on root accounts, exposed access keys, and more, offering suggestions to strengthen your overall security posture.",
         "source_url": ""
     },
     {
@@ -5099,7 +5096,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "Operational Excellence: This pillar focuses on managing and automating operations to achieve more effective, efficient, and reliable processes. It covers the ability to support development and run workloads effectively, gain insight into their operations, and continuously improve supporting processes and procedures to deliver business value. Key practices under this pillar include automating changes, responding to events, and defining standards to manage daily operations.",
         "source_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/oe-design-principles.html"
     },
     {
@@ -5174,7 +5171,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "ccelerated Computing Instances: These instances use hardware accelerators, or co-processors, to perform functions more efficiently than is possible in software running on CPUs. Specifically for workloads that involve GPUs, such as machine learning, graphics rendering, and other computation-intensive tasks, AWS provides instances like the P and G series, which are equipped with NVIDIA GPUs.",
         "source_url": "https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html#ac_hardware"
     },
     {
@@ -5191,7 +5188,7 @@
             "options.1",
             "options.4"
         ],
-        "description": "",
+        "description": "Network ACLs evaluate rules in numerical order, starting from the lowest number. They apply the first rule that matches, allowing or denying traffic based on this rule. This sequential evaluation makes the order of the rules critical.",
         "source_url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html"
     },
     {
@@ -5223,7 +5220,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "The customer is responsible for applying the latest security updates and patches to Amazon EC2 instances.",
+        "description": "Customers have full control over the virtual machines, including the operating system and applications running on them. Therefore, it is the customer's responsibility to ensure that the operating system and any software running on the EC2 instances are kept up-to-date with the latest security patches.",
         "source_url": ""
     },
     {
@@ -5285,7 +5282,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "AWS provides the tools to manage and rotate IAM credentials, but it is up to the customer to implement these practices. Regular rotation of keys is a security best practice that helps minimize the risk of unauthorized access and potential security breaches.",
         "source_url": ""
     },
     {
@@ -5360,7 +5357,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "This service provides a record of actions taken by a user, role, or an AWS service. It is particularly useful for auditing and monitoring activities in your AWS account. CloudTrail logs all API calls for your account, including calls made via the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This will help you trace the exact API call (such as an EC2 termination or stop command) that made the instance inaccessible, who made the call, and when it was made.",
         "source_url": "https://docs.aws.amazon.com/cloudtrail/"
     },
     {
@@ -5475,8 +5472,7 @@
             "1": "VPC Flow Logs",
             "2": "Amazon Inspector",
             "3": "VPC route tables",
-            "4": "AWS CloudTrail",
-            "5": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html"
+            "4": "AWS CloudTrail"
         },
         "correct_answers": [
             "options.1"
@@ -5526,7 +5522,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "Amazon S3 is object storage built to store and retrieve any amount of data from anywhere. S3 is a simple storage service that offers industry leading durability, availability, performance, security, and virtually unlimited scalability at very low costs.",
+        "description": "Amazon S3 is object storage built to store and retrieve any amount of data from anywhere. S3 is a simple storage service that offers industry leading durability, availability, performance, security,and virtually unlimited scalability at very low costs.",
         "source_url": ""
     },
     {
@@ -5541,7 +5537,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "CloudWatch monitors AWS resources and applications in real-time. It can track metrics such as CPU utilization for EC2 instances and trigger alarms based on specific thresholds. When a CloudWatch alarm is triggered due to high CPU utilization, it can notify the EC2 Auto Scaling group to initiate scaling actions to either launch more instances or terminate existing ones depending on the defined conditions.",
         "source_url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html"
     },
     {
@@ -5601,7 +5597,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "Athena is a serverless query service that makes it easy to analyze data directly in Amazon S3 using standard SQL. It is designed for quick ad-hoc querying without the need to set up or manage any servers or databases. You simply point Athena at your data stored in S3, define the schema, and start querying using standard SQL. This service is ideal for tasks like generating summary reports from .csv files with minimal setup and operational overhead.",
         "source_url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
     },
     {
@@ -5631,7 +5627,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "Kendra is an intelligent search service powered by machine learning, designed to enable organizations to provide more relevant information to their users through a powerful natural language search capability.",
         "source_url": "https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html"
     },
     {
@@ -5740,7 +5736,7 @@
             "options.3",
             "options.5"
         ],
-        "description": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-peering.html",
+        "description": "VPC peering allows you to connect two VPCs so that they can communicate with each other as if they were part of the same network. AWS Transit Gateway acts as a network transit hub, enabling you to connect multiple VPCs and on-premises networks through a central control point. This service simplifies the network architecture and effectively manages connectivity and routing between all connected networks. https://docs.aws.amazon.com/vpc/latest/userguide/vpc-peering.html",
         "source_url": "https://docs.aws.amazon.com/vpc/latest/tgw/transit-gateway-isolated.html"
     },
     {
@@ -5770,7 +5766,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "Lightsail is designed for simplicity and quick deployment, providing everything needed to launch a project quickly \u2014 instances, storage, databases, and networking capabilities. It comes with pre-configured templates for various software stacks, making it a great choice for developers or businesses wanting to deploy applications without dealing with the underlying server configurations.",
         "source_url": ""
     },
     {
@@ -5802,7 +5798,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "This tool includes rightsizing recommendations that help users optimize their costs by identifying underutilized EC2 instances. It analyzes past usage patterns to suggest smaller or fewer instances that could potentially deliver the same performance for less cost. Cost Explorer is part of the AWS Management Console and provides these recommendations as part of its cost management capabilities, without an additional charge specifically for the recommendations.",
         "source_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-rightsizing.html"
     },
     {
@@ -5832,7 +5828,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "https://aws.amazon.com/comprehend/ Differentiate your business by training a model to classify documents and identify terms, with no machine learning experience required.",
+        "description": "This is a natural language processing (NLP) service that uses machine learning to uncover insights and relationships in text. Comprehend can analyze and classify text documents automatically, making it ideal for processing and categorizing the content of electronic books. It can identify the topics, sentiment, key phrases, entities, and language in the text, which can be used to classify books into different categories based on their content.",
         "source_url": ""
     },
     {
@@ -5909,7 +5905,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "To keep track of objects and their respective tags, buckets, and prefixes, you can use an S3 Inventory report",
+        "description": "S3 Inventory report: This feature provides a daily or weekly report of all objects within an S3 bucket or a specified prefix. The report includes details such as object metadata, tags, and storage class information for each object. S3 Inventory is useful for large S3 buckets to maintain an organized overview of objects, helping manage and audit S3 objects at scale.",
         "source_url": "https://aws.amazon.com/s3/features/"
     },
     {
@@ -6001,7 +5997,7 @@
             "options.2",
             "options.3"
         ],
-        "description": "",
+        "description": "Cloud financial management: This is like being the financial planner for your cloud services. It ensures you\u2019re spending your cloud budget wisely and not overspending. Application portfolio management: Think of this as organizing and managing all the software and apps your company uses in the cloud to make sure they're helpful, up-to-date, and really needed.",
         "source_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoptionframework/governance-perspective.html"
     },
     {
@@ -6016,7 +6012,7 @@
         "correct_answers": [
             "options.4"
         ],
-        "description": "",
+        "description": "AWS Migration Hub offers a central place where you can monitor the progress of application migrations from on-premises to AWS. It allows you to view the status of all your applications across multiple AWS and partner solutions, helping you manage and track migrations from a single interface. This service simplifies the migration process by providing tools to assess, plan, and track the migration of your applications.",
         "source_url": "https://docs.aws.amazon.com/migrationhub/latest/ug/whatishub.html"
     },
     {
@@ -6281,7 +6277,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "Dedicated Hosts allow you to use your existing per-socket, per-core, or per-VM software licenses",
+        "description": "Dedicated Hosts allow the user to use their existing per-socket, per-core, or per-VM software licenses that are not supported in multi-tenant environments. They provide visibility and control over how instances are placed on a physical server, and you can bring existing server-bound software licenses like those for Microsoft Windows Server to the AWS cloud.",
         "source_url": "https://aws.amazon.com/ec2/dedicated-hosts/"
     },
     {
@@ -6321,7 +6317,7 @@
             "1": "Automatic scaling for all resources to power an application from a single unified interface",
             "2": "Secure delivery of data, videos, applications, and APIs to users globally with low latency",
             "3": "Ability to directly manage traffic globally through a variety of routing types, including latency-based\nrouting, geo DNS, geoproximity, and weighted round robin",
-            "4": "Automatic distribution of incoming application traffic across multiple targets, such as Amazon EC2\ninstances, containers, IP addresses, and AWS Lambda functions"
+            "4": "Automatic distribution of incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and AWS Lambda functions"
         },
         "correct_answers": [
             "options.2"
@@ -6356,7 +6352,7 @@
         "correct_answers": [
             "options.3"
         ],
-        "description": "",
+        "description": "Amazon QuickSight Q: This feature of Amazon QuickSight allows users to use natural language to ask questions about their business data and receive visual answers. QuickSight Q utilizes machine learning to understand the questions and generate visualizations as responses, making it ideal for integrating NLP into BI dashboards where users interact with their data conversationally.",
         "source_url": "https://docs.aws.amazon.com/quicksight/latest/user/working-with-quicksight-q.html"
     },
     {
@@ -6476,7 +6472,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "AWS Application Discovery Service helps you plan cloud migration projects by gathering information about your on-premises data centers.",
+        "description": "This service is specifically designed to help enterprises plan their migration to the AWS cloud by automatically collecting detailed information about their on-premises data center configurations, usage, and behavior. This data includes server utilization, dependency mappings, and application performance, which are critical for effective migration planning and strategy development.",
         "source_url": "https://aws.amazon.com/application-discovery/"
     },
     {
@@ -6491,7 +6487,7 @@
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
+        "description": "This service is designed around the publisher-subscriber messaging pattern. Publishers send messages to topics that they have created, and subscribers (such as web servers, email addresses, AWS Lambda functions, or SMS recipients) receive notifications from those topics. It facilitates highly available, durable, secure, and fully managed pub/sub messaging that can be used to fan out messages to a large number of subscriber endpoints for parallel processing.",
         "source_url": "https://docs.aws.amazon.com/sns/latest/dg/welcome.html"
     },
     {
@@ -6506,7 +6502,7 @@
         "correct_answers": [
             "options.1"
         ],
-        "description": "",
+        "description": "This tool helps you estimate the cost of AWS services before you use them, providing detailed pricing for each service based on the configuration you specify. For a company planning a migration, it can predict costs for Amazon EC2 instances, storage options, and other AWS services by allowing you to input anticipated configurations and usage.",
         "source_url": "https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html"
     }
 ]

@@ -2,31 +2,39 @@ import re
 import json
 
 def parse_questions_from_text(text):
-    pattern = re.compile(
-        r'QUESTION\s+(\d+)\s+(.*?)(?=\s*QUESTION|\s*$)',  # Capture question ID and text, lookahead for next question or end of text
-        re.DOTALL
-    )
-
+    # Regex to isolate blocks of text for each question
+    block_pattern = re.compile(r'QUESTION\s+(\d+)(.*?)(?=\s*QUESTION|\s*$)', re.DOTALL)
+    
     questions = []
 
-    for match in pattern.finditer(text):
-        question_id = match.group(1).strip()
-        question_block = match.group(2).strip()
+    for block_match in block_pattern.finditer(text):
+        question_id = block_match.group(1).strip()
+        question_block = block_match.group(2).strip()
 
-        # Extract question text up to the options start
-        question_text = re.search(r'(.*?)A\.', question_block, re.DOTALL).group(1).strip()
-        question_text = re.sub(r'\s+', ' ', question_text)
+        # Extract question text by ensuring it stops before the first occurrence of any option "A."
+        question_text_match = re.search(r'(.*?)(?=^\s*[A-F]\.)', question_block, re.DOTALL | re.MULTILINE)
+        if question_text_match:
+            question_text = question_text_match.group(0).strip()
+            question_text = re.sub(r'\s+', ' ', question_text)
+        else:
+            question_text = "Could not properly extract question text."
 
-        # Extract options and normalize them by mapping A, B, C to 1, 2, 3, etc.
-        options = re.findall(r'([A-F])\.\s+(.*?)(?=\s+[A-F]\.|\s*Answer:|\s*$)', question_block, re.DOTALL)
-        options_dict = {str(index + 1): option[1].strip() for index, option in enumerate(options)}
-
-        # Extract answers and convert A, B, C, etc., to 1, 2, 3, etc.
-        # Normalize answer labels to uppercase for consistent processing
-        answer_labels = re.search(r'Answer:\s*([A-Fa-f]+)', question_block).group(1).strip().upper()
-        correct_answers = [options_dict[str(ord(label) - ord('A') + 1)] for label in answer_labels]
-
-        # Optionally capture explanation and URL
+        # Extract options ensuring each starts with A., B., etc.
+        options = {}
+        options_matches = re.finditer(r'([A-F])\.\s+(.*?)(?=\s+[A-F]\.|\s*Answer:)', question_block, re.DOTALL)
+        for index, match in enumerate(options_matches):
+            option_letter = match.group(1)
+            option_text = match.group(2).strip()
+            options[str(ord(option_letter) - ord('A') + 1)] = option_text
+        
+        # Extract answers and convert to 1, 2, 3, etc.
+        answer_labels = re.search(r'Answer:\s*([A-Fa-f]+)', question_block)
+        correct_answers = []
+        if answer_labels:
+            answer_labels = answer_labels.group(1).strip().upper()
+            correct_answers = [f"options.{str(ord(label) - ord('A') + 1)}" for label in answer_labels]
+        
+        # Extract explanation and URL, if present
         explanation = ''
         source_url = ''
         explanation_match = re.search(r'Explanation:\s*(.*?)\s*(https?://\S+)?$', question_block, re.DOTALL)
@@ -39,8 +47,8 @@ def parse_questions_from_text(text):
         question_data = {
             "id": question_id,
             "question": question_text,
-            "options": options_dict,
-            "correct_answers": [f"options.{str(ord(label) - ord('A') + 1)}" for label in answer_labels],
+            "options": options,
+            "correct_answers": correct_answers,
             "description": explanation,
             "source_url": source_url
         }
@@ -63,4 +71,4 @@ json_output = json.dumps(parsed_questions, indent=4)
 with open('pdf-in-fixed.json', 'w', encoding='utf-8') as json_file:
     json_file.write(json_output)
 
-print("JSON file 'pdf-in.json' has been created with the parsed data.")
+print("JSON file 'pdf-in-fixed.json' has been created with the parsed data.")
