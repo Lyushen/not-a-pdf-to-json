@@ -3733,6 +3733,7 @@ C. Amazon Inspector
 D. AWS CloudTraiI
 Answer: D
 Explanation:
+ This service provides a record of actions taken by a user, role, or an AWS service. It is particularly useful for auditing and monitoring activities in your AWS account. CloudTrail logs all API calls for your account, including calls made via the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This will help you trace the exact API call (such as an EC2 termination or stop command) that made the instance inaccessible, who made the call, and when it was made.
 https://docs.aws.amazon.com/cloudtrail/
 QUESTION 352
 A company's application developers need to quickly provision and manage AWS services by
@@ -3867,8 +3868,7 @@ D. Amazon Elastic File System (Amazon EFS)
 Answer: B
 Explanation:
 Amazon S3 is object storage built to store and retrieve any amount of data from anywhere. S3 is
-a simple storage service that offers industry leading durability, availability, performance, security,
-and virtually unlimited scalability at very low costs.
+a simple storage service that offers industry leading durability, availability, performance, security,and virtually unlimited scalability at very low costs.
 QUESTION 363
 An ecommerce company wants to use Amazon EC2 Auto Scaling to add and remove EC2
 instances based on CPU utilization.
@@ -3880,6 +3880,7 @@ C. AWS Systems Manager
 D. Amazon CloudWatch alarm
 Answer: D
 Explanation:
+CloudWatch monitors AWS resources and applications in real-time. It can track metrics such as CPU utilization for EC2 instances and trigger alarms based on specific thresholds. When a CloudWatch alarm is triggered due to high CPU utilization, it can notify the EC2 Auto Scaling group to initiate scaling actions to either launch more instances or terminate existing ones depending on the defined conditions.
 https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html
 QUESTION 364
 A company wants to transform its workforce by attracting and developing a digitally fluent high-
@@ -3929,6 +3930,7 @@ C. Amazon Redshift
 D. Amazon EC2
 Answer: B
 Explanation:
+Athena is a serverless query service that makes it easy to analyze data directly in Amazon S3 using standard SQL. It is designed for quick ad-hoc querying without the need to set up or manage any servers or databases. You simply point Athena at your data stored in S3, define the schema, and start querying using standard SQL. This service is ideal for tasks like generating summary reports from .csv files with minimal setup and operational overhead.
 https://docs.aws.amazon.com/athena/latest/ug/what-is.html
 QUESTION 368
 Which AWS feature provides a no-cost platform for AWS users to join community groups, ask
@@ -3949,6 +3951,7 @@ C. Amazon Polly
 D. Amazon Lex
 Answer: A
 Explanation:
+Kendra is an intelligent search service powered by machine learning, designed to enable organizations to provide more relevant information to their users through a powerful natural language search capability. 
 https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html
 QUESTION 370
 Which AWS services make use of global edge locations? (Choose two.)
@@ -4029,6 +4032,8 @@ D. AWS Direct Connect
 E. AWS Transit Gateway
 Answer: CE
 Explanation:
+VPC peering allows you to connect two VPCs so that they can communicate with each other as if they were part of the same network. 
+AWS Transit Gateway acts as a network transit hub, enabling you to connect multiple VPCs and on-premises networks through a central control point. This service simplifies the network architecture and effectively manages connectivity and routing between all connected networks.
 https://docs.aws.amazon.com/vpc/latest/userguide/vpc-peering.html
 https://docs.aws.amazon.com/vpc/latest/tgw/transit-gateway-isolated.html
 QUESTION 377
@@ -4049,6 +4054,8 @@ B. Amazon Athena
 C. AWS Outposts
 D. Amazon EC2
 Answer: A
+Explanation:
+ Lightsail is designed for simplicity and quick deployment, providing everything needed to launch a project quickly — instances, storage, databases, and networking capabilities. It comes with pre-configured templates for various software stacks, making it a great choice for developers or businesses wanting to deploy applications without dealing with the underlying server configurations. 
 QUESTION 379
 Which AWS services are supported by Savings Plans? (Choose two.)
 A. Amazon EC2
@@ -4068,6 +4075,7 @@ C. AWS Cost Explorer
 D. Amazon S3 analytics
 Answer: C
 Explanation:
+This tool includes rightsizing recommendations that help users optimize their costs by identifying underutilized EC2 instances. It analyzes past usage patterns to suggest smaller or fewer instances that could potentially deliver the same performance for less cost. Cost Explorer is part of the AWS Management Console and provides these recommendations as part of its cost management capabilities, without an additional charge specifically for the recommendations.
 https://docs.aws.amazon.com/cost-management/latest/userguide/ce-rightsizing.html
 QUESTION 381
 A company operates a petabyte-scale data warehouse to analyze its data. The company wants a
@@ -4093,9 +4101,7 @@ C. Amazon Comprehend
 D. Amazon Aurora
 Answer: C
 Explanation:
-https://aws.amazon.com/comprehend/
-Differentiate your business by training a model to classify documents and identify terms, with no
-machine learning experience required.
+ This is a natural language processing (NLP) service that uses machine learning to uncover insights and relationships in text. Comprehend can analyze and classify text documents automatically, making it ideal for processing and categorizing the content of electronic books. It can identify the topics, sentiment, key phrases, entities, and language in the text, which can be used to classify books into different categories based on their content.
 QUESTION 383
 Which task is a responsibility of AWS, according to the AWS shared responsibility model?
 A. Encryption of application data
@@ -4153,8 +4159,7 @@ C. S3 Versioning
 D. S3 ACLs
 Answer: A
 Explanation:
-To keep track of objects and their respective tags, buckets, and prefixes, you can use an S3
-Inventory report
+S3 Inventory report: This feature provides a daily or weekly report of all objects within an S3 bucket or a specified prefix. The report includes details such as object metadata, tags, and storage class information for each object. S3 Inventory is useful for large S3 buckets to maintain an organized overview of objects, helping manage and audit S3 objects at scale. 
 https://aws.amazon.com/s3/features/
 QUESTION 388
 A company wants to allow users to authenticate and authorize multiple AWS accounts by using a
@@ -4224,6 +4229,8 @@ D. Innovation management
 E. Product management
 Answer: BC
 Explanation:
+Cloud financial management: This is like being the financial planner for your cloud services. It ensures you’re spending your cloud budget wisely and not overspending.
+Application portfolio management: Think of this as organizing and managing all the software and apps your company uses in the cloud to make sure they're helpful, up-to-date, and really needed.
 https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoptionframework/governance-perspective.html
 QUESTION 394
 Which AWS service provides a single location to track the progress of application migrations?
@@ -4233,6 +4240,7 @@ C. AWS Service Catalog
 D. AWS Migration Hub
 Answer: D
 Explanation:
+AWS Migration Hub offers a central place where you can monitor the progress of application migrations from on-premises to AWS. It allows you to view the status of all your applications across multiple AWS and partner solutions, helping you manage and track migrations from a single interface. This service simplifies the migration process by providing tools to assess, plan, and track the migration of your applications.
 https://docs.aws.amazon.com/migrationhub/latest/ug/whatishub.html
 QUESTION 395
 A company launched an Amazon EC2 instance with the latest Amazon Linux 2 Amazon Machine
@@ -4419,7 +4427,7 @@ C. Dedicated Hosts
 D. Reserved Instances
 Answer: C
 Explanation:
-Dedicated Hosts allow you to use your existing per-socket, per-core, or per-VM software licenses
+Dedicated Hosts allow the user to use their existing per-socket, per-core, or per-VM software licenses that are not supported in multi-tenant environments. They provide visibility and control over how instances are placed on a physical server, and you can bring existing server-bound software licenses like those for Microsoft Windows Server to the AWS cloud.
 https://aws.amazon.com/ec2/dedicated-hosts/
 QUESTION 412
 A solutions architect needs to maintain a fleet of Amazon EC2 instances so that any impaired
@@ -4452,8 +4460,7 @@ A. Automatic scaling for all resources to power an application from a single uni
 B. Secure delivery of data, videos, applications, and APIs to users globally with low latency
 C. Ability to directly manage traffic globally through a variety of routing types, including latency-based
 routing, geo DNS, geoproximity, and weighted round robin
-D. Automatic distribution of incoming application traffic across multiple targets, such as Amazon EC2
-instances, containers, IP addresses, and AWS Lambda functions
+D. Automatic distribution of incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and AWS Lambda functions
 Answer: B
 Explanation:
 Amazon CloudFront is a content delivery network (CDN) service that helps you distribute your
@@ -4482,6 +4489,7 @@ C. Amazon QuickSight Q
 D. Amazon Lex
 Answer: C
 Explanation:
+Amazon QuickSight Q: This feature of Amazon QuickSight allows users to use natural language to ask questions about their business data and receive visual answers. QuickSight Q utilizes machine learning to understand the questions and generate visualizations as responses, making it ideal for integrating NLP into BI dashboards where users interact with their data conversationally.
 https://docs.aws.amazon.com/quicksight/latest/user/working-with-quicksight-q.html
 QUESTION 417
 Which Amazon S3 feature or storage class uses the AWS backbone network and edge locations
@@ -4565,8 +4573,7 @@ C. AWS Service Catalog
 D. AWS Systems Manager
 Answer: B
 Explanation:
-AWS Application Discovery Service helps you plan cloud migration projects by gathering
-information about your on-premises data centers.
+ This service is specifically designed to help enterprises plan their migration to the AWS cloud by automatically collecting detailed information about their on-premises data center configurations, usage, and behavior. This data includes server utilization, dependency mappings, and application performance, which are critical for effective migration planning and strategy development.
 https://aws.amazon.com/application-discovery/
 QUESTION 425
 Which AWS service uses a combination of publishers and subscribers?
@@ -4576,6 +4583,7 @@ C. Amazon CloudWatch
 D. AWS CloudFormation
 Answer: B
 Explanation:
+This service is designed around the publisher-subscriber messaging pattern. Publishers send messages to topics that they have created, and subscribers (such as web servers, email addresses, AWS Lambda functions, or SMS recipients) receive notifications from those topics. It facilitates highly available, durable, secure, and fully managed pub/sub messaging that can be used to fan out messages to a large number of subscriber endpoints for parallel processing.
 https://docs.aws.amazon.com/sns/latest/dg/welcome.html
 QUESTION 426
 A company is in the early stages of planning a migration to AWS. The company wants to obtain
@@ -4588,4 +4596,5 @@ C. AWS Trusted Advisor
 D. AWS Application Migration Service
 Answer: A
 Explanation:
+This tool helps you estimate the cost of AWS services before you use them, providing detailed pricing for each service based on the configuration you specify. For a company planning a migration, it can predict costs for Amazon EC2 instances, storage options, and other AWS services by allowing you to input anticipated configurations and usage. 
 https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html 
